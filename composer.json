@@ -1,0 +1,25 @@
+{
+    "name": "componenta/http-psr-nyholm",
+    "description": "Nyholm PSR-7 and PSR-17 integration for Componenta HTTP",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "componenta/config": "^1.0",
+        "nyholm/psr7": "^1.8",
+        "psr/http-message": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Componenta\\Http\\Psr7\\Nyholm\\": "src/"
+        }
+    },
+    "extra": {
+        "componenta": {
+            "config-providers": [
+                "Componenta\\Http\\Psr7\\Nyholm\\ConfigProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
